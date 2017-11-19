@@ -1,0 +1,75 @@
+.page-header h1 {
+    padding: 15px 0;
+}
+
+.page-header small:last-child {
+    color: gray;
+}
+
+.page-content {
+    line-height: 1.5;
+    text-align: justify;
+    /* We disabled this, b/c it adds corrupted letter... */
+}
+
+object svg {
+    fill: white;
+}
+
+section[id]:before, a[id^="fnref"]:before, .footnotes li[id^="fn"]:before, h1[id]:before, h2[id]:before, h3[id]:before, h4[id]:before, h5[id]:before, h6[id]:before, a[id]:before {
+    display: block;
+    position: relative;
+    margin-top: -75px;
+    height: 75px;
+    visibility: hidden;
+}
+
+body {
+    padding-top: 70px;
+    position: relative;
+}
+
+ul#socials {
+    text-align: left;
+    display: inline;
+    padding-left: 7px;
+}
+
+ul#socials > li {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 7px;
+}
+
+ul#socials > li#facebook {
+    margin-top: -10px;
+}
+
+ul#socials > li#hatena-star {
+    margin-top: -10px;
+}
+
+ul#socials > li:first-child {
+    margin-left: 0;
+}
+
+ul#socials > li:last-child {
+    margin-right: 0;
+}
+
+ul#socials iframe {
+    margin: 0 !important;
+}
+
+@media screen and (max-width: 780px){
+    ul#socials > li{
+	width: 80px !important;
+	margin: 0 7px 10px 0;
+    }
+}
+
+@media screen and (min-width: 780px){
+    #side-toc {
+	font-size: small;
+    }
+}
